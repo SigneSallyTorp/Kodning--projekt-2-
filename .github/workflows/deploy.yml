@@ -1,0 +1,30 @@
+
+name: Upload hjemmeside til Simply.com
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Hent filer fra GitHub
+        uses: actions/checkout@v4
+
+      - name: Upload til Simply.com
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.6
+        with:
+          server: ftp.simply.com
+          username: ${{ secrets.FTP_USER }}
+          password: ${{ secrets.FTP_PASS }}
+          protocol: ftps
+          port: 21
+          local-dir: ./
+          server-dir: /public_html/kissyourbrain/
+          exclude: |
+            **/.git*
+            **/.git*/**
+            **/node_modules/**
