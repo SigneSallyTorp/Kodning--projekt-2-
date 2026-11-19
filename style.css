@@ -1119,7 +1119,7 @@ margin-right: auto;
     font-size: clamp(28px, 3.5vw, 36px);
 }
 
-.hjælp-into {
+.hjælp-intro {
     font-size: 15px;
     line-height: 1.8;
     margin-bottom: 60px;
@@ -1433,7 +1433,7 @@ margin: 50px auto;
     margin-bottom: 45px;
 }
 
-.støtte-indhol {
+.støtte-indhold {
     grid-template-columns: 1.1fr 0.9fr;
     gap: 20px;
 }
@@ -1522,7 +1522,7 @@ margin: 50px auto;
     padding: 35px 6%;
 }
 
-.satistik-tekst {
+.statistik-tekst {
     width: 100%;
     flex-shrink: 1;
     text-align: center;
