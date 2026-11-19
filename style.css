@@ -1721,6 +1721,11 @@ margin: 50px auto;
     height: auto;
 }
 
+a[href^="tel:"] {
+    color: #2A404D;
+    text-decoration: none;
+}
+
 .emnebjælke {
     width: 100%;
     margin-top: -10px;
