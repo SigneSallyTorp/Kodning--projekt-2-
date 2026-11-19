@@ -1024,6 +1024,27 @@ margin-right: auto;
     display: none;
 }
 
+.skip-link {
+    position: fixed;
+    top: -100px;
+    left: 20px;
+    z-index: 1000;
+    padding: 12px 20px;
+    background-color: #2A404D;
+    color: white;
+    border-radius: 8px;
+}
+
+.skip-link:focus {
+    top: 20px;
+}
+
+a:focus-visible,
+button:focus-visible {
+    outline: 3px solid black;
+    outline-offset: 4px;
+}
+
 
 
 
@@ -1867,12 +1888,13 @@ a[href^="tel:"] {
 }
 
 .kontakt-knap {
-    position: static;
+    position: relative;
+    left: 40px;
     transform: none;
     display: block;
     width: fit-content;
     max-width: 85%;
-    margin: 30px auto 0;
+    margin: 110px auto 0;
     padding: 12px 20px;
     font-size: 14px;
     text-align: center;
