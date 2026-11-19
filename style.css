@@ -4,6 +4,11 @@
     box-sizing: border-box;
 }
 
+html, body {
+    max-width: 100%;
+    overflow-x: clip;
+}
+
 body {
     margin: 0;
     background-color: #F9F4F0;
@@ -1061,6 +1066,7 @@ margin-right: auto;
     gap: 20px;
     align-items: center;
     justify-content: space-between;
+     overflow: hidden;
 }
 
 .hero-billede {
@@ -1678,6 +1684,7 @@ margin: 50px auto;
     min-height: clamp(270px, 75vw, 380px);
     padding: 30px 5% 0;
     margin-top: 0;
+     overflow: hidden;
 }
 
 .hero-tekst {
