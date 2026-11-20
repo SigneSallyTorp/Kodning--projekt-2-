@@ -1700,7 +1700,6 @@ margin: 50px auto;
 .hero {
     position: relative;
     display: flex;
-    flex-direction: column;
     height: auto;
     min-height: clamp(270px, 75vw, 380px);
     padding: 30px 5% 0;
